@@ -55,7 +55,13 @@ def factory_for_gt(im_size, name=None, path_gt=None):
                   [0., 0., 1.]]  # nuScenes calibration
 
         print("Using a standard calibration matrix...")
-
+    # JLD: included PIE kk (intrinsic matrix)
+    print("By JLD")
+    kk =    [  
+                [1004.8374471951423, 0.0, 960.1025514993675],
+                [0, 1004.3912782107128, 573.5538287373604],
+                [0, 0, 1],
+            ]
     return kk, dic_gt
 
 
